@@ -38,21 +38,23 @@ hr {
     overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: .5rem;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: .5rem;
-}
-
-strong {
-    font-size: 2rem;
+    font-size: 1rem;
+    margin: .5rem;
 }
 
 a {
+    margin: 0;
     padding-left: 18px;
     padding-right: 18px;
     color: var(--primary);
@@ -67,8 +69,12 @@ a:hover {
     color: var(--accent);
 }
 
+div.icons a {
+    padding: 0;
+}
+
 div {
-    margin: 1rem;
+    margin: .5rem;
     overflow: hidden
 }
 
@@ -80,18 +86,16 @@ div.item {
 
 nav {
     background: var(--dark);
-    padding: 0;
     color: var(--dark);
     border-radius: 0;
     box-shadow: none;
     border: none;
-    margin-bottom: 0;
+    display: grid;
 }
 
 @media screen and (min-width: 1000px) {
     div.split {
         display: grid;
-        gap: 1rem;
         grid-template-columns: 1fr 1fr;
     }
     nav {
