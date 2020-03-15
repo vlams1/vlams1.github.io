@@ -6,11 +6,38 @@
     --accent: #6f42c1;
 }
 
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1500px)  {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 2500px) and (max-width: 4000px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 4000px) {
+    html {
+        font-size: 38px;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Roboto, sans-serif;
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     color: var(--primary);
